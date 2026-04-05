@@ -2,9 +2,8 @@ name: Daily Weather KakaoTalk
 
 on:
   schedule:
-    # UTC 21:00 = KST 06:00 (다음날)
     - cron: '0 21 * * *'
-  workflow_dispatch: # 수동 실행용
+  workflow_dispatch:
 
 jobs:
   send-weather:
